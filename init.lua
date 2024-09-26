@@ -706,6 +706,12 @@ require('lazy').setup({
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
+  -- Vim Oil for file management
+  {
+    'stevearc/oil.nvim',
+    opts = {},
+    dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+  },
 
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
